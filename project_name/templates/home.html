@@ -1,6 +1,7 @@
-{% templatetag openblock %} extends "base.html" {% templatetag closeblock %}
-
-{% templatetag openblock %} block content {% templatetag closeblock %}
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<link href="{% static 'css/home.css' %}" rel="stylesheet">
  <!-- Jumbotron -->
 <div class="jumbotron">
     <h1><img src="{% static 'img/favicon.png' %}" alt="logo"> {{ project_name }}</h1>
@@ -26,4 +27,4 @@
         <p><a class="btn btn-primary" href="#">View details &raquo;</a></p>
     </div>
 </div>
-{% templatetag openblock %} endblock content {% templatetag closeblock %}
+{% endblock content %}
