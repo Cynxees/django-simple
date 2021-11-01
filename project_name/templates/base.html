@@ -9,9 +9,9 @@
 
         <title>{% templatetag openblock %} block title {% templatetag closeblock %}{{ project_name }}{% templatetag openblock %} endblock title {% templatetag closeblock %}</title>
         
-        <link href="{% templatetag openvariable %} STATIC_URL {% templatetag closevariable %}css/base.css" rel="stylesheet">
-        <link href="{% templatetag openvariable %} STATIC_URL {% templatetag closevariable %}css/{{ project_name }}.css" rel="stylesheet">
+        <link href="{% static 'css/base.css' %}" rel="stylesheet">
 
+        
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
             <script src="{% templatetag openvariable %} STATIC_URL {% templatetag closevariable %}js/html5shiv.js"></script>
