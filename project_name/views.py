@@ -1,11 +1,4 @@
-from django.shortcuts import render
+from django.views.generic import TemplateView
 
-# Create your views here.
-# For more information on this file, see
-# https://docs.djangoproject.com/en/{{ docs_version }}/intro/tutorial03/
-
-def home(request):
-    context = {
-        'active_nav': 'home',
-    }
-    return render(request, 'home.html', context)
+class Homepage(TemplateView):
+    template_name = 'home.html'
